@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"/>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+    .top_menu {
+        list-style: none;
+        float: left;
+    }
+</style>
+<body>
+
+<div class="pageHeader header" th:fragment="pageHeader">
+
+    <div class="row">
+        <div class="col-3">
+
+        </div>
+
+        <div class="col-7 offset-md-2">
+            <div class="row">
+                <ul class="top_menu">
+                    <li class="top_menu">Sign in</li>
+                    <li class="top_menu">My Starbucks</li>
+                    <li class="top_menu">Customer Service & Ideas</li>
+                    <li class="top_menu">Find a Store</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

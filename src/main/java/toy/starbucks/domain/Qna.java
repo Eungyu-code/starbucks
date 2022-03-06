@@ -22,4 +22,13 @@ public class Qna {
 
     //private Member member;
 
+    // Qna 생성 메소드
+
+    public void addQNA(Member member, String title, String questions) {
+
+        //this.member = member;
+        this.title = title;
+        this.questions = questions;
+    }
+
 }

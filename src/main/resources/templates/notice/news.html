@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"/>
+<style>
+    .news_menu {
+        height: 110px;
+    }
+    .news_search {
+        height: 80px;
+    }
+</style>
+<body>
+
+<div th:replace="fragments/pageHeader :: pageHeader"/>
+
+<div class="container">
+    <div style="font-size: 31px" class="fw-bolder pb-2">뉴스</div>
+
+    <div class="row">
+        <div class="col-2 offset-md-10 pb-3">
+            <span style="font-size: 13px; color:gray;" class="ps-2"><i class="fa-solid fa-house"></i> > WHAT'S NEW > 뉴스</span>
+        </div>
+    </div>
+    <div class="row px-3">
+        <div class="row news_menu justify-content-between" style="border: 1px solid #DDDDDD; border-radius: 5px;">
+            <div class="col-2 align-self-center btn" style="background-color: #006533; color: white; text-decoration: underline">
+                전체
+            </div>
+            <div class="col-2 align-self-center btn" style="background-color: #f4f4f1">
+                상품 출시
+            </div>
+            <div class="col-2 align-self-center btn" style="background-color: #f4f4f1">
+                스타벅스와 문화
+            </div>
+            <div class="col-2 align-self-center btn" style="background-color: #f4f4f1">
+                스타벅스 사회공헌
+            </div>
+            <div class="col-2 align-self-center btn" style="background-color: #f4f4f1">
+                스타벅스 카드 출시
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-3 py-5">
+        <div class="row justify-content-end news_search" style="background-color: #f4f4f1;">
+            <div class="col-3 align-self-center" style="display: inline;">
+                <input size="14" style="font-size: 14px;" type="text" class="form-control" placeholder="검색어를 입력해주세요">
+            </div>
+            <div class="col-1 align-self-center">
+                <button type="button" class="btn w-100" style="background-color: #777777; color: white;">검색</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-3 pb-1">
+        <div class="row justify-content-end" style="font-size: 11px;">최근(7일)에 등록된 0개의 게시물이 있습니다.</div>
+    </div>
+    <div class="row px-3">
+        <table>
+            <thead>
+            <tr>
+                <th>NO</th>
+                <th>이미지</th>
+                <th>구분</th>
+                <th>내용</th>
+                <th>등록일</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

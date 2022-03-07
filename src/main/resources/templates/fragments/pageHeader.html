@@ -2,12 +2,6 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="fragments/header :: header"/>
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-<style>
-    .top_menu {
-        list-style: none;
-        float: left;
-    }
-</style>
 <body>
 
 <div class="pageHeader header" th:fragment="pageHeader">
@@ -17,13 +11,27 @@
 
         </div>
 
-        <div class="col-7 offset-md-2">
-            <div class="row">
-                <ul class="top_menu">
-                    <li class="top_menu">Sign in</li>
-                    <li class="top_menu">My Starbucks</li>
-                    <li class="top_menu">Customer Service & Ideas</li>
-                    <li class="top_menu">Find a Store</li>
+        <div class="col-8 offset-1">
+            <div class="row offset-md-1 mt-3 mb-1">
+                <ul class="my_menu">
+                    <li><a style="font-size: 13px" th:href="@{/members/signIn}" class="menu_link">Sign In</a></li>
+                    <li><a style="font-size: 13px" th:href="@{/members/myStarbucks}" class="menu_link">My Starbucks</a></li>
+                    <li><a style="font-size: 13px" th:href="@{/customers}" class="menu_link">Customer Service & Ideas</a></li>
+                    <li><a style="font-size: 13px" th:href="@{/findStores}" class="menu_link">Find a Store</a></li>
+                    <li><input style="line-height: 15px; font-size: 14px;" size="14" type="text" class="form-control" placeholder="통합검색"></li>
+                </ul>
+            </div>
+            <div class="row mb-1 ms-2">
+                <ul class="site_menu">
+                    <li style="font-size: 14px; color: #555555;">COFFEE</li>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <li style="font-size: 14px; color: #555555;">MENU</li>
+                    <li style="font-size: 14px; color: #555555;">STORE</li>
+                    <li style="font-size: 14px; color: #555555;">RESPONSIBILITY</li>
+                    <li style="font-size: 14px; color: #555555;">STARBUCKS REWARDS</li>
+                    <li style="font-size: 14px; color: #555555;"><a th:href="@{/notices}" class="menu_link">WHAT'S NEW</a></li>
                 </ul>
             </div>
         </div>
